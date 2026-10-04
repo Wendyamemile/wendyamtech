@@ -1,103 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Wend-yam Technologies (WYT)</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Wend-yam Technologies (WYT)</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Wend-yam Technologies (WYT)</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CSS spécifique pour l'en-tête de la page projets -->
+    <style>
+        .projects-page-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .projects-page-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .projects-page-desc {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- EFFETS LUMINEUX EN ARRIÈRE-PLAN -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <!-- BARRE DE NAVIGATION (GLASSMORPHISM) -->
+<header class="navbar">
+    <a href="index.html" class="brand">
+        <div class="brand-icon">WYT</div>
+        <span class="brand-text">Wend-yam <span class="highlight">Tech</span></span>
+    </a>
+
+    <!-- 1. AJOUTEZ L'ICÔNE HAMBURGER ICI -->
+    <div class="hamburger" id="hamburger-menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </div>
+
+    <!-- 2. AJOUTEZ L'ID "nav-links" À CETTE BALISE -->
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <a href="contact.html" class="btn btn-outline btn-sm desktop-only">Get in Touch</a>
+</header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container">
+        
+        <!-- EN-TÊTE DE LA PAGE -->
+        <div class="projects-page-header">
+            <h1 class="projects-page-title gradient-text">Portfolio Data Science</h1>
+            <p class="projects-page-desc">
+                Découvrez une sélection de mes modèles d'apprentissage automatique, pipelines de données et tableaux de bord interactifs. Chaque projet résout un problème métier spécifique.
+            </p>
+        </div>
+
+        <!-- GRILLE DE PROJETS -->
+        <div class="project-grid">
+
+
+            <!-- LOAN DEFAULT MACHINE LEARNING PROJECT -->
+            <article class="project-card">
+                <div class="card-banner banner-blue">
+                    <span class="banner-badge">Machine Learning / Finance</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="project-title">Loan Default Prediction Model</h3>
+                    <p class="project-desc">
+                        Developed a predictive machine learning classifier to evaluate applicant financial data and predict the probability of loan default, helping to mitigate credit risk.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Classification</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/Wendyamemile/loan-default-ml" target="_blank" class="project-link">
+                            <span>View Code on GitHub</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                        </a>
                     </div>
                 </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+            </article>
+
+
+            <!-- PROJET 1
+            <article class="project-card">
+                <div class="card-banner banner-blue">
+                    <span class="banner-badge">Machine Learning</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="project-title">Moteur de Prédiction du Churn</h3>
+                    <p class="project-desc">
+                        Développement d'un classificateur XGBoost pour identifier les principaux comportements menant au désabonnement des clients, permettant aux équipes de rétention de cibler les comptes à risque.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">Pandas</span>
                     </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card-links">
+                        <a href="https://github.com/votre-compte/repo-churn" target="_blank" class="project-link">
+                            <span>Code Source</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                        </a>
+                        <a href="https://huggingface.co/spaces/votre-espace" target="_blank" class="project-link highlight-link">
+                            <span>Application Live</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                        </a>
                     </div>
                 </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+            </article> -->
+
+            <!-- PROJET 2 -->
+            <!-- <article class="project-card">
+                <div class="card-banner banner-purple">
+                    <span class="banner-badge">Analytics & BI</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="project-title">Prévisions des Ventes & EDA</h3>
+                    <p class="project-desc">
+                        Création de modèles de prévision de séries chronologiques (Prophet & ARIMA) connectés à un tableau de bord interactif pour prédire les revenus trimestriels et les tendances saisonnières.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Prophet</span>
+                        <span class="tag">Séries Chronologiques</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/votre-compte/repo-ventes" target="_blank" class="project-link">
+                            <span>Notebook EDA</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                        </a>
+                        <a href="#" class="project-link highlight-link">
+                            <span>Dashboard Interactif</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                        </a>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; 2026 Wend-yam Technologies (WYT) </div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
+            </article> -->
+
+            <!-- PROJET 3 -->
+            <!-- <article class="project-card">
+                <div class="card-banner banner-emerald">
+                    <span class="banner-badge">NLP / Deep Learning</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="project-title">Analyseur de Sentiments (NLP)</h3>
+                    <p class="project-desc">
+                        Mise au point d'un modèle Transformer pour analyser le sentiment de plus de 20 000 avis clients non structurés, permettant de faire remonter les problèmes techniques hebdomadaires.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Hugging Face</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Streamlit</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/votre-compte/repo-nlp" target="_blank" class="project-link">
+                            <span>Code Source</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                        </a>
+                        <a href="https://huggingface.co/spaces/votre-espace-nlp" target="_blank" class="project-link highlight-link">
+                            <span>Tester le Modèle</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+            </article> -->
+
+            <!-- Vous pouvez ajouter de nouvelles cartes <article class="project-card"> ici pour vos futurs projets -->
+
+        </div>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer" style="margin-top: 60px;">
+        <p>© 2026 Wend-yam Technologies (WYT). Engineered for data-driven decisions.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
 </html>
